@@ -1,0 +1,16 @@
+
+public class ManageDebtsOwedToYou{
+	public void display() {
+		System.out.print("\f");
+		System.out.println("----------------------------");
+		System.out.println("| View Accounts |");
+	    System.out.println("----------------------------");
+	    System.out.println(" ");
+	    System.out.println("Name	Amount	Due Date	Reason	Comments");
+	     
+	    
+		 
+}
+}
+
+	
