@@ -1,0 +1,37 @@
+
+public class ManageDebtsOwedToYou{
+	public void display() {
+		System.out.print("\f");
+		System.out.println("----------------------------");
+		System.out.println("| Manage Debts Owed To You |");
+	    System.out.println("----------------------------");
+	    System.out.println(" ");
+	    System.out.println(
+	        "Select an option: \n" +
+	        "  1) Add debt someone else owes to you.\n" +
+	        "  2) Edit debt someone else owes to you.\n" +
+	        "  3) Delete debt someone else owes to you.\n" +
+	        "  4) Return to main menu.\n " 
+	    );
+	     
+	    
+		int choiceManageDebts2 = scan.nextInt(); 
+	    if(choiceManageDebts2 == 1){ 
+	        addDebtOwedToYou(); 
+	    } 
+	    else if(choiceManageDebts2 == 2){ 
+	        editDebtOwedToYou(); 
+	    } 
+	    else if(choiceManageDebts2 == 3){ 
+	        deleteDebtOwedToYou(); 
+	    } 
+	    else if(choiceManageDebts2 == 4){ 
+	        ReturnToMainMenu(); 
+	    } 
+	    else{ 
+	        System.out.println("That choice not an option."); 
+	    input.nextLine();
+}
+}
+}
+	
