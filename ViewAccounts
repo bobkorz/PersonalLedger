@@ -1,0 +1,37 @@
+
+public class ViewAccounts{
+	public void display() {
+		System.out.print("\f");
+		System.out.println("-----------------");
+		System.out.println("| View Accounts |");
+	    System.out.println("-----------------");
+	    System.out.println(" ");
+	    System.out.println(
+	        "Select an option: \n" +
+	        "  1) View debts someone else owes to you.\n" +
+	        "  2) View debts you owe to someone else.\n" +
+	        "  3) View all accounts.\n" +
+	        "  4) Return to main menu.\n " 
+	    );
+	     
+	    
+		int choiceViewAccounts = scan.nextInt(); 
+	    if(choiceViewAccounts == 1){ 
+	        ViewAccountsOwedToYou(); 
+	    } 
+	    else if(choiceViewAccounts == 2){ 
+	        ViewAccountsOwedToOthers(); 
+	    } 
+	    else if(choiceViewAccounts == 3){ 
+	        ViewAllAccounts(); 
+	    } 
+	    else if(choiceViewAccounts == 4){ 
+	        ReturnToMainMenu(); 
+	    } 
+	    else{ 
+	        System.out.println("That choice not an option."); 
+	    input.nextLine();
+}
+}
+}
+	
