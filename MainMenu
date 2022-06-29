@@ -1,0 +1,39 @@
+
+public class MainMenu {
+	public void display() {
+	    System.out.print("\f");
+		System.out.println("------------------------------");
+		System.out.println("| Welcome to Personal Ledger |");
+	    System.out.println("------------------------------");
+		System.out.println(" ");
+	    System.out.println(
+	        "Select an option: \n" +
+	        "  1) Manage debts owed to you.\n" +
+	        "  2) Manage debts you owe to someone else.\n" +
+	        "  3) Administration.\n" +
+	        "  4) Help screen.\n " +
+	        "  5) Exit."
+	    );
+	    int choiceMainMenu = scan.nextInt(); 
+	    if(choiceMainMenu == 1){ 
+	        ManageDebtsOwedToYou(); 
+	    } 
+	    else if(choiceMainMenu == 2){ 
+	        ManageDebtsOwedToOthers(); 
+	    } 
+	    else if(choiceMainMenu == 3){ 
+	        Administration(); 
+	    } 
+	    else if(choiceMainMenu == 4){ 
+	        HelpScreen(); 
+	    } 
+	    else if(choiceMainMenu == 5){ 
+	        Exit(); 
+	    }
+	    else{ 
+	        System.out.println("That choice not an option."); 
+	    input.nextLine();
+}
+}
+
+	
